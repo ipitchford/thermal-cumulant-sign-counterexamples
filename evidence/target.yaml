@@ -1,0 +1,37 @@
+target_id: thermal-current-cumulant-conjectures-2026-10-20
+search_date: 2026-10-20
+intended_contribution_unit: Resolution of the two thermal conjectures; minimality; fixed-thermodynamics unbounded violations
+claim:
+  exact_statement: >-
+    For finite irreducible classical Markov jump systems satisfying bathwise
+    local detailed balance with two positive-temperature baths, C3/C1 and
+    C4/C2 can simultaneously tend to minus infinity with three states,
+    fixed distinct energies, fixed bath temperatures, fixed stationary
+    distribution, fixed positive mean heat current and all bath-resolved
+    transition rates strictly positive. Two states cannot violate either sign.
+  exclusions:
+    - No novelty claim for random telegraph switching or its generic cumulants.
+    - No claim about finite-time standardised skewness or kurtosis.
+    - No contradiction of equilibrium results or thermodynamic uncertainty relations.
+source:
+  originating_reference: Ptaszynski (2022), Physical Review E 106, 024119, Section III D, equations 19 and 20
+  url: https://doi.org/10.1103/PhysRevE.106.024119
+normalisation:
+  indices: Matrices act on column probabilities; states ordered 0,1,2.
+  scaling: Cn is the nth long-time heat cumulant per unit time; S=C3/C1 and K=C4/C2.
+  basis_order: Energies (0,1,0) in simple example, (0,2,1) in full-support family.
+  symmetries: Current reversal preserves both ratios; common rate scaling preserves both ratios.
+sequences:
+  exact_values: Simple model C1=1/7; C2=(6+145e)/(343e); C3=(1531e^2+2595e-18)/(16807e^2).
+  natural_scalings: In full-support family e^2 S -> -16/21609; e^2 K -> -16/64827.
+generating_functions:
+  expression: x^3+(8+2e)x^2+14ex-[4(exp(z)-1)+2(exp(-z)-1)](x+e)
+  variables: x eigenvalue; z cold-bath counting field; e weak coupling
+matrices:
+  entries: Simple tilted generator [[-2-e,2+4exp(z),e],[1+exp(-z),-6,0],[e,0,-e]].
+aliases:
+  probability: [Markov additive process, occupation time cumulants, Markov-modulated current, slow switching]
+  mathematical_physics: [full counting statistics, dynamical channel blockade, thermal transport, bistable transport]
+  analysis: [singular perturbation, tilted generator, eigenvalue derivatives]
+known_invariants: [local detailed balance, Gallavotti-Cohen symmetry, positive entropy production, stationary probabilities]
+search_constraints: Bounded live web search and primary arXiv/publisher sources, no exhaustive citation-index guarantee.

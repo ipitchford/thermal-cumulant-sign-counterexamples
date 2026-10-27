@@ -1,0 +1,32 @@
+# SPDX-License-Identifier: MIT
+name: Replay
+on:
+  push:
+  pull_request:
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: Check SHA256SUMS
+        run: sha256sum -c SHA256SUMS
+      - name: Exact standard-library certificates (byte-compared; assertions on, so no -O)
+        run: |
+          cp -R . "$RUNNER_TEMP/pkg"
+          cd "$RUNNER_TEMP/pkg"
+          for s in verify_determinant verify_poisson verify_scaling; do uv run --frozen --python 3.11 python3 -B -I code/$s.py > /dev/null; done
+          for f in determinant_certificate.json poisson_certificate.json independent_scaling_certificate.json; do cmp "evidence/$f" "$GITHUB_WORKSPACE/evidence/$f"; done
+      - name: Symbolic verifier and figure script (pass/fail)
+        run: |
+          cd "$RUNNER_TEMP/pkg"
+          uv run --frozen --python 3.11 python3 -B -I code/verify_extension.py > /dev/null
+          uv run --frozen --python 3.11 python3 -B -I code/plot_divergence.py > /dev/null
+          cmp evidence/divergence.csv "$GITHUB_WORKSPACE/evidence/divergence.csv"
+      - name: Semantic negative controls
+        run: |
+          cd "$RUNNER_TEMP/pkg"
+          uv run --frozen --python 3.11 python3 -B -I code/negative_controls.py
+      - name: Working tree unchanged
+        run: test -z "$(git status --porcelain)"

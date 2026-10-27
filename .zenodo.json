@@ -1,0 +1,120 @@
+{
+  "title": "Thermal heat-current cumulant ratios can be arbitrarily negative: three-state counterexamples to two sign conjectures",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "description": "<p><strong>Unrefereed research candidate.</strong> Ptaszyński (Phys. Rev. E 106, 024119, 2022) conjectured from random-network calculations that the long-time heat-current cumulant ratios C<sub>3</sub>/C<sub>1</sub> and C<sub>4</sub>/C<sub>2</sub> are nonnegative in classical Markov systems driven only by temperature differences. This package gives exact three-state, two-bath counterexamples obeying local detailed balance. A fully connected family keeps energies, temperatures, stationary probabilities, mean heat current and entropy production fixed while both ratios tend to minus infinity like &epsilon;<sup>-2</sup>. In the standard state-jump model with one counted bath, two states never violate either sign. The mechanism is classical slow switching. The divergence tracks the variance: the variance-normalised ratios tend to -9/4 and -3/4, and variance-based bounds such as the thermodynamic uncertainty relation are untouched. With six states even the normalised ratios are unbounded below. A kinetic lower bound for positive mean and variance, in terms of the spectral separation of the stationary eigenvalue, captures the &epsilon;<sup>-2</sup> rate. A negative ratio therefore does not certify quantum or non-thermal driving; slow switching must be excluded first.</p><p>The archive contains the 13-page manuscript (PDF and LaTeX), exact rational and symbolic verifiers, a seeded random census, semantic negative controls, CI and SHA-256 sums. Assurance: written proofs, exact certificates, internal AI-assisted review only (not peer review, independent reproduction or formal verification). Creator: Anonymous. Text and data CC0-1.0; code MIT.</p>",
+  "creators": [
+    {
+      "name": "Anonymous"
+    }
+  ],
+  "version": "1.0.0-candidate",
+  "publication_date": "2026-10-27",
+  "access_right": "open",
+  "license": "cc-zero",
+  "keywords": [
+    "stochastic thermodynamics",
+    "heat current",
+    "full counting statistics",
+    "cumulants",
+    "skewness",
+    "kurtosis",
+    "local detailed balance",
+    "Markov jump process",
+    "telegraph noise",
+    "counterexample"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/ipitchford/thermal-cumulant-sign-counterexamples/tree/v1.0.0-candidate",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://evidencepress.org/releases/thermal-cumulant-sign-counterexamples/",
+      "relation": "isDocumentedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.1103/PhysRevE.106.024119",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1103/PhysRevLett.114.158101",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1103/PhysRevLett.116.120601",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1103/physrevlett.115.188103",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1088/1751-8121/ac3b0c",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1103/PhysRevE.106.L042101",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1103/RevModPhys.81.1665",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1088/1367-2630/16/3/033030",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1103/PhysRevLett.93.260604",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1103/PhysRevB.67.085316",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1073/pnas.0901002106",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1088/1751-8121/aaee34",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1103/PhysRevE.111.034125",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1103/PhysRevE.100.042101",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1007/BF01386217",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1007/978-3-642-66282-9",
+      "relation": "references",
+      "scheme": "doi"
+    }
+  ],
+  "notes": "Code (all .py files and the CI workflow) is MIT; prose, manuscript, figures and data are CC0-1.0. Version DOI 10.5281/zenodo.23689958; concept DOI 10.5281/zenodo.23689957."
+}

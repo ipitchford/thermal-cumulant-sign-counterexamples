@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "Please cite this versioned research candidate by its DOI."
+title: "Thermal heat-current cumulant ratios can be arbitrarily negative: three-state counterexamples to two sign conjectures"
+type: software
+authors:
+  - name: Anonymous
+version: 1.0.0-candidate
+doi: 10.5281/zenodo.23689958
+date-released: 2026-10-27
+repository-code: "https://github.com/ipitchford/thermal-cumulant-sign-counterexamples"
+url: "https://evidencepress.org/releases/thermal-cumulant-sign-counterexamples/"
+license:
+  - CC0-1.0
+  - MIT
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23689958
+    description: "Version DOI (1.0.0-candidate)"
+  - type: doi
+    value: 10.5281/zenodo.23689957
+    description: "Concept DOI (all versions)"
+keywords:
+  - stochastic thermodynamics
+  - heat current
+  - full counting statistics
+  - cumulants
+  - local detailed balance
+abstract: "Exact three-state, two-bath counterexamples with local detailed balance to Ptaszynski's 2022 conjectures that C3/C1 and C4/C2 of the heat current are nonnegative; both ratios tend to minus infinity at fixed thermodynamic data; two states never suffice in the standard model; variance-normalised ratios stay finite in the trap family and variance-based bounds are untouched; six states make even normalised ratios unbounded; a kinetic bound for C1, C2 > 0. Unrefereed candidate; internal AI-assisted review only. Text and data CC0-1.0; code MIT."
+references:
+  - type: article
+    title: "Bounds on skewness and kurtosis of steady-state currents"
+    authors:
+      - family-names: Ptaszyński
+        given-names: Krzysztof
+    year: 2022
+    doi: 10.1103/PhysRevE.106.024119

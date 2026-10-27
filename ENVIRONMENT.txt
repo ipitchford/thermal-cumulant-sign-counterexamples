@@ -1,0 +1,5 @@
+Local clean replay (27 October 2026): macOS 27 (arm64), uv with CPython 3.11, versions pinned in uv.lock (numpy 2.4.6, matplotlib 3.11.2, sympy 1.14.0).
+Command form: uv run python3 -I code/<script>.py (census: code/census.py 100000), run through the shared local research queue.
+Negative controls: uv run --frozen python3 -B -I code/negative_controls.py (refuses -O).
+CI: GitHub Actions ubuntu-latest with uv (.github/workflows/replay.yml). It byte-compares the three standard-library certificates, runs the SymPy/NumPy verifier, the figure script and the negative controls for pass/fail, and checks SHA256SUMS. The census and the figure bytes are compared only in the local macOS replay, because floating-point output and figure encodings can differ across platforms.
+LaTeX: pdfTeX (TeX Live 2026) via latexmk.

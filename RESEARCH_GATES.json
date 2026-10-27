@@ -1,0 +1,180 @@
+{
+ "schemaVersion": "1.0",
+ "provenance": "Compiled 27 October 2026 for release 1.0.0-candidate from the dated bounded novelty audit of 20 October 2026 (evidence/literature_audit.md, evidence/novelty_report.md, evidence/target.yaml), the round-1 domain review and the re-review, proof audit and final outside-model audit of 27 October 2026. It documents the scrutiny performed, not historical priority. No new search was run at release preparation.",
+ "contributionMap": [
+  {
+   "claim": "Exact three-state two-bath LDB counterexamples to Ptaszynski 2022 eqs. (19)-(20), with both ratios tending to -infinity at fixed energies, temperatures, stationary law, mean current and entropy production.",
+   "unit": "statement",
+   "paperLocation": "Section 3; Theorem 5.1",
+   "searches": [
+    {
+     "date": "2026-10-20",
+     "query": "\"Ptaszynski\" \"heat\" \"kurtosis\" counterexample; \"2204.08421\" counterexample; \"Bounds on skewness and kurtosis of steady-state currents\" correction; \"heat current\" \"cumulants\" \"negative\" \"Ptaszynski\"; \"negative skewness\" \"heat current\" classical; \"negative kurtosis\" \"heat\" Markov",
+     "corpus": "public web search (two engines), arXiv and primary journal pages; bounded novelty audit (evidence/literature_audit.md, evidence/novelty_report.md)"
+    },
+    {
+     "date": "2026-10-27",
+     "query": "Crossref records for all 16 bibliography DOIs; source-text comparison of Ptaszynski 2022 Sec. III and III D during re-review",
+     "corpus": "Crossref API, doi.org, arXiv:2204.08421"
+    }
+   ],
+   "closestPriorWork": "Ptaszynski 2022 (conjectures); Ptaszynski-Esposito 2025 (thermal switching, different claim)",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Weak-trap sign region (3-sqrt5)/2 < U/V < 1 for simultaneous divergence; telegraph limit.",
+   "unit": "method",
+   "paperLocation": "Lemma 4.2; Theorem 4.3",
+   "searches": [
+    {
+     "date": "2026-10-20",
+     "query": "\"heat current\" \"telegraph\" cumulants; \"telegraph\" \"fourth cumulant\" \"negative\"; Sukhorukov Jordan stochastic switching full counting statistics third cumulant bistable systems; \"Critical heat current fluctuations in Curie-Weiss model\"",
+     "corpus": "public web search (two engines), arXiv and primary journal pages; bounded novelty audit (evidence/literature_audit.md, evidence/novelty_report.md)"
+    }
+   ],
+   "closestPriorWork": "Jordan-Sukhorukov 2004; Bagrets-Nazarov 2003 (telegraph cumulants, credited at point of use)",
+   "verdict": "known-cited"
+  },
+  {
+   "claim": "Variance-normalised limits (min -15/4 attained) and six-state unboundedness of normalised ratios.",
+   "unit": "statement",
+   "paperLocation": "Propositions 6.1-6.2",
+   "searches": [
+    {
+     "date": "2026-10-20",
+     "query": "\"heat current\" \"telegraph\" cumulants; \"telegraph\" \"fourth cumulant\" \"negative\"; Sukhorukov Jordan stochastic switching full counting statistics third cumulant bistable systems; \"Critical heat current fluctuations in Curie-Weiss model\"",
+     "corpus": "public web search (two engines), arXiv and primary journal pages; bounded novelty audit (evidence/literature_audit.md, evidence/novelty_report.md)"
+    }
+   ],
+   "closestPriorWork": "Elementary from telegraph SCGF; Proposition 6.2 is an amplification by independent products",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Kinetic lower bound via spectral separation (ratio bounds conditional on C1>0, C2>0).",
+   "unit": "method",
+   "paperLocation": "Theorem 6.3",
+   "searches": [
+    {
+     "date": "2026-10-27",
+     "query": "Crossref records for all 16 bibliography DOIs; source-text comparison of Ptaszynski 2022 Sec. III and III D during re-review",
+     "corpus": "Crossref API, doi.org, arXiv:2204.08421"
+    }
+   ],
+   "closestPriorWork": "Standard Bauer-Fike, Riesz projection and Cauchy estimates; analyticity-radius bounds for Markov additive functionals are classical",
+   "verdict": "known-cited"
+  },
+  {
+   "claim": "Two-state positivity, giving three states as the minimum in the standard model.",
+   "unit": "statement",
+   "paperLocation": "Proposition 7.1",
+   "searches": [
+    {
+     "date": "2026-10-20",
+     "query": "\"Ptaszynski\" \"heat\" \"kurtosis\" counterexample; \"2204.08421\" counterexample; \"Bounds on skewness and kurtosis of steady-state currents\" correction; \"heat current\" \"cumulants\" \"negative\" \"Ptaszynski\"; \"negative skewness\" \"heat current\" classical; \"negative kurtosis\" \"heat\" Markov",
+     "corpus": "public web search (two engines), arXiv and primary journal pages; bounded novelty audit (evidence/literature_audit.md, evidence/novelty_report.md)"
+    }
+   ],
+   "closestPriorWork": "Two-state counting formulas standard; E^2/4 bound consistent with unicyclic results in Ptaszynski 2022",
+   "verdict": "known-cited"
+  }
+ ],
+ "sourcesReadInFull": [
+  {
+   "citation": "Ptaszynski, Phys. Rev. E 106, 024119 (2022), doi:10.1103/PhysRevE.106.024119",
+   "usedFor": "Conjectures (19)-(20), thermal setting (63)-(70), sampling scheme",
+   "readWhat": "Full arXiv:2204.08421v4 (definitions, Sec. III, III D, III E, appendix)",
+   "date": "2026-10-20",
+   "evidenceLocator": "paper Table 1; evidence/literature_audit.md"
+  },
+  {
+   "citation": "Jordan and Sukhorukov, Phys. Rev. Lett. 93, 260604 (2004), doi:10.1103/PhysRevLett.93.260604",
+   "usedFor": "Telegraph cumulant formulas (prior art)",
+   "readWhat": "Full arXiv:cond-mat/0406261, eqs. (12)-(15)",
+   "date": "2026-10-20",
+   "evidenceLocator": "evidence/literature_audit.md"
+  },
+  {
+   "citation": "Ptaszynski and Esposito, Phys. Rev. E 111, 034125 (2025), doi:10.1103/PhysRevE.111.034125",
+   "usedFor": "Thermal switching prior art",
+   "readWhat": "Full arXiv:2411.19643v3",
+   "date": "2026-10-20",
+   "evidenceLocator": "evidence/literature_audit.md"
+  },
+  {
+   "citation": "Salazar, Phys. Rev. E 106, L042101 (2022), doi:10.1103/PhysRevE.106.L042101",
+   "usedFor": "Finite-time skewness relation; distinction",
+   "readWhat": "Full arXiv:2208.11206",
+   "date": "2026-10-20",
+   "evidenceLocator": "evidence/literature_audit.md"
+  }
+ ],
+ "limitationTriage": [
+  {
+   "limitation": "Priority holds only within a bounded search; no exhaustive citation-index search or author enquiry.",
+   "closingQuestion": "Did any earlier gated-conductor paper print a negative thermal C3/C1 or C4/C2 in the conjectured class?",
+   "triedOrSearched": "Two web engines, primary papers and citing literature of the 2022 source, 20 October 2026.",
+   "estimatedCost": "days",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "Exhaustive search out of scope for this release; disclosed."
+  },
+  {
+   "limitation": "Kinetic bound constants about 1e4 loose.",
+   "closingQuestion": "Sharp constants?",
+   "triedOrSearched": "Numerical comparison in the full family.",
+   "estimatedCost": "weeks",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "New research; Section 10."
+  },
+  {
+   "limitation": "Whether K-hat >= -15/4 for all three-state networks.",
+   "closingQuestion": "Prove or refute.",
+   "triedOrSearched": "Census minimum -3.68.",
+   "estimatedCost": "weeks",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "New research; Section 10."
+  },
+  {
+   "limitation": "No explicit disparity threshold; other source inequalities untested.",
+   "closingQuestion": "Sign rules under bounded disparity?",
+   "triedOrSearched": "Census, Table 2.",
+   "estimatedCost": "weeks",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "New research; Section 10."
+  },
+  {
+   "limitation": "Unrefereed; no formalisation.",
+   "closingQuestion": "Can the exact certificates be formalised cheaply?",
+   "triedOrSearched": "Not attempted.",
+   "estimatedCost": "days",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "Out of scope for this release."
+  }
+ ],
+ "extensionScout": {
+  "by": "Internal AI-assisted reviewers and the editor, 27 October 2026",
+  "date": "2026-10-27",
+  "proposals": [
+   "Kinetic bound",
+   "Normalised-ratio limits",
+   "Random census explaining the source search",
+   "Feasibility table",
+   "Finite-eps phase diagram",
+   "Gillespie study",
+   "Physical realisation"
+  ],
+  "actions": [
+   "Theorem 6.3 added (ratio bounds made conditional in final fixes)",
+   "Propositions 6.1-6.2 added",
+   "Section 8 census and Table 2",
+   "Table 3",
+   "Declined: listed as open",
+   "Declined: listed as open",
+   "Declined: listed as open"
+  ]
+ }
+}

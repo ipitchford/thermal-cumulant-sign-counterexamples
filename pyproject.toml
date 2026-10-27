@@ -1,0 +1,10 @@
+[project]
+name = "thermal-cumulants-supplement"
+version = "2.0"
+description = "Exact and numerical checks for 'Thermal heat-current cumulant ratios can be arbitrarily negative'"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=2.0",
+  "matplotlib>=3.9",
+  "sympy>=1.13",
+]

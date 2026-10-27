@@ -1,0 +1,75 @@
+{
+ "schemaVersion": "1.0",
+ "release": "thermal-cumulant-sign-counterexamples",
+ "version": "1.0.0-candidate",
+ "doi": "10.5281/zenodo.23689958",
+ "conceptDoi": "10.5281/zenodo.23689957",
+ "creator": "Anonymous",
+ "status": "unrefereed candidate",
+ "model": "Finite continuous-time Markov jump process with state energies E_i, two baths with bathwise local detailed balance k^a_ij/k^a_ji = exp(-beta_a (E_i-E_j)); heat delivered to the cold bath counted with tilt exp(z(E_j-E_i)); C_n = nth derivative at 0 of the dominant eigenvalue of the tilted generator; S=C3/C1, K=C4/C2.",
+ "target": "Ptaszynski (2022) Phys. Rev. E 106, 024119, equations (19)-(20): K>=0, and S>=0 for a single temperature difference.",
+ "claims": [
+  {
+   "id": "C1",
+   "kind": "counterexample",
+   "location": "Section 3",
+   "statement": "An explicit three-state, two-bath network with LDB has S<0 for eps<6.91e-3 and K<0 for eps<6.67e-2; exact rational cumulants.",
+   "evidence": "written derivation; exact certificates verify_determinant.py, verify_poisson.py"
+  },
+  {
+   "id": "C2",
+   "kind": "theorem",
+   "location": "Theorem 4.3, Corollary 4.4, Lemma 4.2",
+   "statement": "Weak-trap family: C_n = eps^(1-n)(c_n+O(eps)); S and K both tend to -infinity like eps^-2 iff (3-sqrt5)/2 < U/V < 1 at leading order; every two-state conductor with a degenerate trap realises it.",
+   "evidence": "written proof; symbolic check verify_extension.py"
+  },
+  {
+   "id": "C3",
+   "kind": "theorem",
+   "location": "Theorem 5.1",
+   "statement": "Full-support three-state family with energies (0,2,1), beta_h=log2, beta_c=log4, stationary law (40,5,18)/63, C1=40/63 and entropy production fixed: S=-16/(21609 eps^2)+O(1/eps), K=-16/(64827 eps^2)+O(1/eps). No finite lower bound on S or K depends only on these data.",
+   "evidence": "written proof; exact certificates verify_determinant.py, verify_scaling.py, verify_poisson.py"
+  },
+  {
+   "id": "C4",
+   "kind": "proposition",
+   "location": "Proposition 6.1",
+   "statement": "In the trap family the variance-normalised limits are (3/2)(1-r) and 3(1-3r+r^2) >= -15/4, attained at r=3/2; for Theorem 5.1, -9/4 and -3/4.",
+   "evidence": "written proof; verify_extension.py"
+  },
+  {
+   "id": "C5",
+   "kind": "proposition",
+   "location": "Proposition 6.2",
+   "statement": "Six-state two-bath LDB networks at fixed energies and temperatures with both normalised ratios tending to -infinity (an amplification by independent products; both negative only for eps <~ 1e-3 in the stated example).",
+   "evidence": "written proof; numerical check verify_extension.py"
+  },
+  {
+   "id": "C6",
+   "kind": "theorem",
+   "location": "Theorem 6.3",
+   "statement": "For irreducible diagonalisable L(0) with spectral separation g: |C_n| <= n!(g/2)(E_max/ell)^n; if C1>0 then S >= -(3g/C1)(E_max/ell)^3; if C2>0 then K >= -(12g/C2)(E_max/ell)^4.",
+   "evidence": "written proof; numerical check verify_extension.py"
+  },
+  {
+   "id": "C7",
+   "kind": "proposition",
+   "location": "Proposition 7.1",
+   "statement": "Two states (standard state-jump model, one counted bath, any number of aggregated other baths): C2>0, C4>0 and C3/C1 >= E^2/4 whenever C1 != 0.",
+   "evidence": "written proof; exact identities verify_scaling.py"
+  },
+  {
+   "id": "C8",
+   "kind": "numerical",
+   "location": "Section 8, Tables 2-3",
+   "statement": "Random census: no violation with rates within one decade; violations need rate disparity of order 1e2 or more; source-scheme violation fractions (denominator includes 34% skipped samples).",
+   "evidence": "numerical evidence only; census.py with fixed seeds"
+  }
+ ],
+ "notClaimed": [
+  "Novelty of slow-switching or telegraph cumulant formulas",
+  "Any violation of the thermodynamic uncertainty relation or other variance-based bounds",
+  "Finite-time standardised skewness or kurtosis",
+  "Ptaszynski's other inequalities"
+ ]
+}

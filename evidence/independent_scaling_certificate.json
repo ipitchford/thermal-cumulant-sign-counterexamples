@@ -1,0 +1,21 @@
+{
+  "general_trap_characteristic_identity": true,
+  "two_state_endpoint_and_positive_decomposition_identities": true,
+  "full_family_scaled_characteristic_coefficient": {
+    "eps0": "0",
+    "eps1": "0",
+    "eps2": "(27/2)*(y^2+(28-8*k/9)*y-160*k/9)"
+  },
+  "limiting_derivatives": [
+    "40/63",
+    "320/27783",
+    "-640/1361367",
+    "-5120/1801088541"
+  ],
+  "limiting_ratio_coefficients": [
+    "-16/21609",
+    "-16/64827"
+  ],
+  "stationarity_and_current_polynomial_identities": true,
+  "all_assertions_passed": true
+}
